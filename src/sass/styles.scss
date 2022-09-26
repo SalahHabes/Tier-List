@@ -1,0 +1,15 @@
+@use './abstracts/' as *;
+@use './sections';
+
+body {
+    display: grid;
+    grid-template-rows: 2rem 1fr 1rem;
+    background-color: $base;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    border-radius: 3px;
+    padding: 2rem;
+}

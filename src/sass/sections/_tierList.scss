@@ -1,0 +1,39 @@
+@use '../abstracts' as *;
+
+.tierList {
+    padding: 0;
+    display: grid;
+    margin: auto;
+    grid-gap: 0.5rem;
+    height: fit-content;
+    margin-bottom: 1rem;
+}
+
+.tier {
+    display: grid;
+    text-align: center;
+    gap: 0.5rem;
+    grid-template-columns: 2rem 1fr;
+    height: $tierHeight;
+    background-color: $gray;
+
+    div {
+        display: flex;
+        align-items: center;
+        width: $tierHeight;
+        text-align: center;
+        
+    }
+}
+
+.tierContainer {
+    width: 90%;
+}
+
+#S	{ background-color: $s; }
+#A	{ background-color: $a; }
+#B	{ background-color: $b; }
+#C	{ background-color: $c; }
+#D	{ background-color: $d; }
+#E	{ background-color: $e; }
+#F	{ background-color: $f; }

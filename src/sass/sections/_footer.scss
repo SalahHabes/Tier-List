@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+footer {
+    width: 100vw;
+    text-align: center;
+    background-color: $gray;
+}
