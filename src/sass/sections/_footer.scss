@@ -1,19 +1,22 @@
 @use '../abstracts/' as *;
 
 footer {
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: $gray;
     font-family: $generalFont;
     font-weight: 700;
     height: fit-content;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     text-align: center;
-    width: 100vw;
 
     a {
         border-radius: 0.5rem;
         color: $base;
         padding: 0.25rem;
+        margin-left: 0.25rem;
         text-decoration: none;
     }
 

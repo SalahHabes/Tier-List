@@ -3,7 +3,9 @@
 nav {
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    align-items: center;
+    
+    padding: 1rem 0;
     text-align: center;
     background-color: $gray;
     height: fit-content;
@@ -14,7 +16,6 @@ nav {
         font-size: 1.25rem;
         padding: 0.25rem 0 0.1225rem 0.5rem;
         width: 60vw;
-        
         margin-right: 0.5rem;
     }
 
@@ -24,5 +25,13 @@ nav {
         border-radius: 10px;
         cursor: pointer;
         padding: 0.25rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    nav {
+        input {
+            width: 864px;
+        }
     }
 }

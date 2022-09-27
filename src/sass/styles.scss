@@ -3,17 +3,29 @@
 
 body {
     display: grid;
+    justify-content: center;
     grid-template-rows: 2rem 1fr 1rem;
     gap: 2.5rem;
     background-color: $base;
     height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
 main {
     box-sizing: border-box;
     border-radius: 3px;
-    padding: 2rem;
+    padding: 1rem;
     width: 100vw;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    main {
+        width: 1440px;
+    }
 }
