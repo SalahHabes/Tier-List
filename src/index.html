@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>TierList</title>
 </head>
 <body>
     <nav>
-        <input type="text">
-        <button>add</button>
+        <form id="linkForm" onsubmit="addImage(mayonnaise)"> 
+            <input type="text" id="linkInput" placeholder="paste image link here..." required>
+            <button type="submit">add</button>
+        </form>
     </nav>
     <main>
         <ul class="tierList">
@@ -26,10 +29,7 @@
             <li class="tier"><div class="tierTitle" id='E'>E</div><div class="tierContainer"></div></li>
             <li class="tier"><div class="tierTitle" id='F'>F</div><div class="tierContainer"></div></li>
         </ul>
-        <div class="unratedItems">
-            <img class="tierItem" src="https://cdn.apartmenttherapy.info/image/upload/v1565842227/k/archive/17cef5c85fb4e5fbd5062742687f7a7da632bd74.jpg" alt="">
-            <img class="tierItem" src="https://cdn.apartmenttherapy.info/image/upload/v1565842227/k/archive/17cef5c85fb4e5fbd5062742687f7a7da632bd74.jpg" alt="">
-        </div>
+        <div id="unratedItems" class="unratedItems"></div>
     </main>
     <footer>
         made by 
@@ -38,5 +38,7 @@
             <img src="./assets/external-link.svg" class="filter-green"/>    
         </a>
     </footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
