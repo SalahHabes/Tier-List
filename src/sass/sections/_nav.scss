@@ -1,6 +1,28 @@
 @use '../abstracts' as *;
 
 nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
     text-align: center;
     background-color: $gray;
+    height: fit-content;
+
+    input {
+        border-radius: 10px;
+        border: 0;
+        font-size: 1.25rem;
+        margin-left: 1rem;
+        padding: 0.25rem 0 0.0625rem 0.5rem;
+        width: 60vw;
+        margin-right: 0.5rem;
+    }
+
+    button {
+        font-size: 1.25rem;
+        border: 0px;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 0.25rem 1rem;
+    }
 }

@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+
+.tierItem {
+    border-radius: $roundness;
+    height: $itemHeight * 1rem;
+    margin: 0.25rem;
+}

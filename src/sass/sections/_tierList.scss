@@ -1,5 +1,13 @@
 @use '../abstracts' as *;
 
+#S	{ background-color: $s; }
+#A	{ background-color: $a; }
+#B	{ background-color: $b; }
+#C	{ background-color: $c; }
+#D	{ background-color: $d; }
+#E	{ background-color: $e; }
+#F	{ background-color: $f; }
+
 .tierList {
     padding: 0;
     display: grid;
@@ -10,30 +18,27 @@
 }
 
 .tier {
-    display: grid;
-    text-align: center;
-    gap: 0.5rem;
-    grid-template-columns: 2rem 1fr;
-    height: $tierHeight;
     background-color: $gray;
-
+    border-radius: $roundness;
+    display: flex;
+    min-height: $tierHeight * 1rem;
+    
     div {
-        display: flex;
         align-items: center;
-        width: $tierHeight;
-        text-align: center;
-        
+        display: flex;
     }
 }
 
-.tierContainer {
-    width: 90%;
+.tierTitle {
+    border-radius: $roundness 0 0 $roundness;
+    font-family: $generalFont;
+    font-size: 1.5rem;
+    justify-content: center;
+    min-width: $tierHeight * 1rem;
+    text-align: center;
 }
 
-#S	{ background-color: $s; }
-#A	{ background-color: $a; }
-#B	{ background-color: $b; }
-#C	{ background-color: $c; }
-#D	{ background-color: $d; }
-#E	{ background-color: $e; }
-#F	{ background-color: $f; }
+.tierContainer {
+    flex-wrap: wrap;
+    padding: 0.25rem;
+}

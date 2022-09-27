@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+.unratedItems {
+    background-color: $gray;
+    border-radius: $roundness;
+    min-height: $tierHeight * 1rem;
+    padding: 0.25rem;
+    flex-wrap: wrap;
+}

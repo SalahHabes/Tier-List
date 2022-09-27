@@ -1,7 +1,26 @@
 @use '../abstracts/' as *;
 
 footer {
-    width: 100vw;
-    text-align: center;
     background-color: $gray;
+    font-family: $generalFont;
+    font-weight: 700;
+    height: fit-content;
+    padding: 0.5rem;
+    text-align: center;
+    width: 100vw;
+
+    a {
+        border-radius: 0.5rem;
+        color: $base;
+        padding: 0.25rem;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: rgb(110, 110, 110);
+    }
+
+    img {
+        width: 1rem;
+    }
 }
