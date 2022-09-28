@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .tierItem {
+    display: flex;
     position: relative;
     width: fit-content;
     height: fit-content;
