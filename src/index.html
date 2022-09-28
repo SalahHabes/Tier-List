@@ -5,21 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>TierList</title>
 </head>
 <body>
     <nav>
-        <form id="linkForm" onsubmit="addImage(mayonnaise)"> 
+        <form id="linkForm" onsubmit="addImage()"> 
             <input type="text" id="linkInput" placeholder="paste image link here..." required>
             <button type="submit">add</button>
         </form>
     </nav>
     <main>
         <ul class="tierList">
-            <li class="tier"><div class="tierTitle" id='S'>S</div>
-                <div class="tierContainer">
-                <img class="tierItem" src="https://www.cdiscount.com/pdt2/8/4/2/1/700x700/les2009467563842/rw/lesieur-mayonnaise-235-g.jpg" alt="">
+            <li class="tier">
+                <div class="tierTitle" id='S'>S</div>
+                <div class="tierItem">
+                    <img class="image" src="https://www.cdiscount.com/pdt2/8/4/2/1/700x700/les2009467563842/rw/lesieur-mayonnaise-235-g.jpg" alt="">
+                    <input class="deleteIcon" type="image" src="./assets/remove.png" onClick="this.parentNode.remove()"/>
+                </div>
+                <div class="tierItem">
+                    <img class="image" src="https://www.cdiscount.com/pdt2/8/4/2/1/700x700/les2009467563842/rw/lesieur-mayonnaise-235-g.jpg" alt="">
+                    <input class="deleteIcon" type="image" src="./assets/remove.png" onClick="deleteImage(this)"/>
                 </div>
             </li>
             <li class="tier"><div class="tierTitle" id='A'>A</div><div class="tierContainer"></div></li>

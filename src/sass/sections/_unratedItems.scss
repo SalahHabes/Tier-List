@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .unratedItems {
+    display: flex;
     background-color: $gray;
     border-radius: $roundness;
     min-height: $tierHeight * 1rem;
